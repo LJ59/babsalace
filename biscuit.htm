@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Nordinfo</title>
+        <meta name="description" content="Les dernières actualités de Nordinfo">
+    <link rel="stylesheet" href="css/nordinfo.css" type="text/css" media="screen">
+    </head>
+
+
+    
+    <body>
+<div class="fondnordinfo">
+    <div class="titragenordinfo">
+        <h2>Toute l'actualité des aidants est sur <a href="https://info.lenord.fr" title="Aller sur le site Nordinfo, le Département est là (ouvre un nouvel onglet)" target="blank"><img src="https://info.lenord.fr/img/logos/logo.png" alt="Nordinfo, tout l'actualité du Département" class="titragenordinfoimg"></a> </h2>
+<div class="blocactuinfo">
+        <ul  class="contenusnordinfo" >
+        
+        <li class="vueligneinfo">
+            <a href="https://info.lenord.fr/a-maubeuge-un-lieu-pour-faire-vivre-le-lien-familial" title="À Maubeuge, un lieu pour faire vivre le lien familial (aller sur Nordinfo, ouvre un nouvel onglet)"target="_blank">
+            <img src="https://info.lenord.fr/media/cache/thumb/upload/images/60354c41c9a22_HOUZ1082_web.jpg" alt="">
+            À Maubeuge, un lieu pour faire vivre le lien familial</a>
+        </li>
+        
+        <li class="vueligneinfo">
+            <a href="https://info.lenord.fr/teletravail--comment-la-fibre-a-change-leur-quotidien" title="Télétravail : comment la fibre a changé leur quotidien (aller sur Nordinfo, ouvre un nouvel onglet)" target="_blank">
+            <img src="https://info.lenord.fr/media/cache/thumb/upload/images/601aca7622bd3_fibre_optique_mairie_de_felleries_lampla_12_web.jpg" alt="">
+            Télétravail : comment la fibre a changé leur quotidien</a>
+        </li>
+        
+        <li class="vueligneinfo">
+            <a href="https://info.lenord.fr/nos-bons-plans-pour-soccuper-pendant-les-vacances-dhiver" title="Nos bons plans pour s'occuper pendant les vacances" target="_blank">
+            <img src="https://info.lenord.fr/media/cache/thumb/upload/images/6026c5eba38a3_iStock-1180953175.jpg" alt="">
+            Nos bons plans pour s'occuper pendant les vacances d'hiver</a>
+        </li>
+        </ul>
+         <a href="https://info.lenord.Fr" class="boutonversnordinfo" title="Aller sur info.lenord.fr (ouvre un nouvel onglet)" target="_blank">+</a>
+
+       
+</div>
+   
+  <div class="liendefinnordinfo"> <a href="https://info.lenord.fr" target="_blank" title="Intitulé du lien (ouvre un nouvel onglet)">Retrouvez toute l'actualité des aidants sur <b>info.lenord.fr</b></a></div>
+ 
+   
+</div>
+
+<script>
+      let height;
+
+  const sendPostMessage = () => {
+    if (height !== document.getElementById('container').offsetHeight) {
+      height = document.getElementById('container').offsetHeight;
+      window.parent.postMessage({
+        frameHeight: height
+      }, '*');
+      console.log(height);
+    }
+  }
+
+  window.onload = () => sendPostMessage();
+  window.onresize = () => sendPostMessage();
+</script>
+
+
+        
+   
+                      
+    </body>
+</html>

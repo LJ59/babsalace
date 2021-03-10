@@ -1,0 +1,140 @@
+// BLOCKS
+
+// - GENERAL
+// - FONT FAMILIES
+// - TOP BAR
+
+// GENERAL
+
+body, html {}
+
+html[data-font=dyslexia] * {
+  font-family: opendyslexicregular, serif;
+}
+
+body {
+  font-size: 1.2rem;
+}
+
+// FONT FAMILIES
+
+@font-face {
+  font-family: 'opendyslexicregular';
+  src: url('../fonts/opendyslexic-regular-webfont.woff2') format('woff2'),
+  url('../fonts/opendyslexic-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'opendyslexicbold';
+  src: url('../fonts/opendyslexic-bold-webfont.woff2') format('woff2'),
+  url('../fonts/opendyslexic-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// TOP BAR
+
+.top-bar {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.top-bar {
+  background-color: #17323f;
+  color: #fff;
+  font-size: 1rem;
+  padding: .5em 1em;
+  line-height: 1;
+  >.__col {
+    flex: 0 1 auto;
+    border-right: 1px solid #5ac8fa;
+    padding: 0 1em;
+    &:last-child {
+      border-right: 0;
+    }
+    &._font-sizes {
+      button {
+        &.active {
+          color: #5ac8fa;
+        }
+      }
+    }
+    &._dyslexia {
+      button {
+        padding: 0 .5em;
+        &.active {
+          color: #17323f;
+          background-color: #fff;
+          border-radius: .25em;
+        }
+      }
+    }
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    li {
+      display: inline-block;
+      margin-right: .5em;
+    }
+  }
+  button {
+    color: #fff;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+    &.active {
+
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

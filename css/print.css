@@ -1,0 +1,17 @@
+body {font-family: Serif; font-size: 15pt; background: none; color: black; page-break-before: always;}
+/*Cacher l'inutile*/
+#backtotop,#confort,#sidebar,.fermer,.menu,.contenumodale, iframe,.c-dialog,footer img,.menubouton,button,#header,form,.sr-only,.sr-only-focusable,.outils,#footer {display: none;}
+/*Decorum titrage*/
+.logo {width:33%;margin:0% 33%;}
+.sstitre{font-size:25pt;}
+/*Exergue*/
+.exergue{margin-left: 30pt;}
+/* Tableaux */
+.tableau, th, td {border-collapse: collapse; border: 2pt solid #000000;padding:10pt;}
+.tableau{width:100%}
+caption{font-size:20pt; margin-top: 30pt;margin-bottom: 10pt;}
+/* Affichage URL après liens mais pas mails ni tel */
+a{color:black;text-decoration: none;}
+a:after {content: " (" attr(href) ") "; text-decoration: underline;}
+a[href^="tel:"]:after {content: none;}
+a[href^="mailto:"]:after {content: none;}
