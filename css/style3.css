@@ -1,0 +1,64 @@
+* {
+    font-family: Roboto, Arial, Sans-Serif;
+    color: black;
+}
+
+button.accordion {
+    background-color: #17323F;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+button.accordion:focus,
+button.accordion:hover {
+    /*   outline: 2px solid magenta; */
+    -webkit-box-shadow: inset 0px 0px 0px 3px #60C6F2;
+    -moz-box-shadow: inset 0px 0px 0px 3px #60C6F2;
+    box-shadow: inset 0px 0px 0px 3px #60C6F2;
+}
+
+button.accordion.active {
+    background-color: #139FC6;
+    color: #17323F;
+    border: 0;
+}
+
+
+/* Style the accordion panel. Note: hidden by default */
+
+div.panel {
+    background-color: white;
+    display: none;
+}
+
+
+/* The "show" class is added to the accordion panel when the user clicks on one of the buttons. This will show the panel content */
+
+div.panel.show {
+    display: block;
+}
+
+button::-moz-focus-inner {
+    border: 0;
+}
+
+
+/* panel content */
+
+.panel p {
+    padding: 18px;
+    background: #ECECEA;
+    margin: 0;
+    text-align: center;
+}
